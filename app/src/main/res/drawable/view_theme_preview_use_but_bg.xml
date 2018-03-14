@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/view_sign_in_but_bg_color"/>
+            <stroke android:color="@color/view_theme_preview_use_but_bg_color" android:width="0.5dp"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+
+</layer-list>

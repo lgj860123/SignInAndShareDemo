@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 作用同系统的 fitsSystemWindows -->
+    <attr name="fitsSystemWindows" format="boolean"/>
+    <!-- 渐显出来的标题栏高度 -->
+    <attr name="titleLayoutHeight" format="dimension"/>
+
+    <!-- 自定义状态栏的属性 -->
+    <declare-styleable name="CustomStatusBarView">
+        <!-- 总是显示，作用相当于 fitSystemWindows -->
+        <attr name="showAlways" format="boolean"/>
+        <!-- 在指定的安卓系统版本以上显示，仅当 showAlways 为 false 时 -->
+        <attr name="showAfterSdkVersionInt" format="integer"/>
+    </declare-styleable>
+
+    <!-- Tab按键, 带提示红点 -->
+    <declare-styleable name="SkinTabButton">
+        <attr name="dotSize" format="dimension"/>
+        <attr name="text" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="auto_layout">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+</resources>

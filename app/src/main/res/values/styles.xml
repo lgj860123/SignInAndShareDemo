@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/status_bar_color</item>
+        <item name="colorPrimaryDark">@color/status_bar_color</item>
+        <item name="fitsSystemWindows">false</item>
+        <item name="titleLayoutHeight">45dp</item>
+    </style>
+
+    <!--启动页的样式-->
+    <style name="WelcomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/welcome</item>
+    </style>
+
+    <!-- 首页Tab风格样式 -->
+    <style name="MainTabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/view_main_tab_select</item>
+    </style>
+
+</resources>

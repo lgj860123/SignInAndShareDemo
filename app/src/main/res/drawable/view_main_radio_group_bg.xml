@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="0.5dp"
+        android:drawable="@color/view_tab_line" />
+    <item
+        android:drawable="@color/view_tab_radio_group_bg"
+        android:top="0.5dp" />
+
+</layer-list>

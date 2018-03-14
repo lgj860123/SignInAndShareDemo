@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--stateBar部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/view_home_page_state_bar_bg">
+
+            <com.pybeta.daymatter.signinandsharedemo.custom.StatusBarCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:showAfterSdkVersionInt="15"
+                app:showAlways="false"
+                android:background="@drawable/view_home_page_state_bar_custom_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/view_home_page_state_bar_custom_bg">
+
+                <ImageButton
+                    android:id="@+id/ib_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_home_page_state_bar_list_select"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_homePage_stateBar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_page"
+                    android:textColor="@color/view_home_page_state_bar_text_color"
+                    android:textSize="@dimen/T17"
+                    android:layout_centerInParent="true"/>
+
+                <ImageButton
+                    android:id="@+id/ib_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_home_page_state_bar_more_select"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageButton
+                    android:id="@+id/ib_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_home_page_state_bar_search_select"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ib_more"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/view_home_page_state_bar_line_bg"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/view_home_page_bg">
+
+    </RelativeLayout>
+
+</LinearLayout>

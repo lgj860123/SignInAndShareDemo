@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:drawable="@drawable/view_main_tab_but_bg_select" android:state_pressed="true"/>
+            <item android:drawable="@drawable/view_main_tab_but_bg_select" android:state_checked="true"/>
+            <item android:drawable="@drawable/view_main_tab_but_bg_nor" />
+        </selector>
+    </item>
+</layer-list>

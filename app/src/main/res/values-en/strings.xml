@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_page">Home page</string>
+    <string name="other_one">Other 1</string>
+    <string name="other_two">Other 2</string>
+    <string name="my">My</string>
+    <string name="quit_app">One more exit program</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="phone_number_hint">Please enter the phone number</string>
+
+    <string name="password_number">Password:</string>
+    <string name="password_number_hint">Please input a password</string>
+
+    <string name="sign_in_other_type">Other login methods</string>
+    <string name="forget_password">Forget the password</string>
+    <string name="setting">Set up</string>
+
+    <string name="more_language">More language</string>
+    <string name="personality_theme">Personality theme</string>
+
+    <string-array name="language_array">
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+</resources>

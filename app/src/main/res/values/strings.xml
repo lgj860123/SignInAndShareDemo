@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">SignInAndShareDemo</string>
+
+
+    <string name="home_page">首页</string>
+    <string name="other_one">其他1</string>
+    <string name="other_two">其他2</string>
+    <string name="my">我的</string>
+    <string name="quit_app">再按一次退出程序</string>
+
+    <string name="sign_in">登录</string>
+    <string name="register">注册</string>
+    <string name="phone_number">手机号码:</string>
+    <string name="phone_number_hint">请输入手机号码</string>
+
+    <string name="password_number">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码:</string>
+    <string name="password_number_hint">请输入密码</string>
+
+    <string name="sign_in_other_type">其他登录方式</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="setting">设置</string>
+
+    <string name="more_language">多语言</string>
+    <string name="personality_theme">个性主题</string>
+    <string name="current_theme">当前主题：</string>
+    <string name="color_theme">颜色主题</string>
+    <string name="theme_preview">主题预览</string>
+    <string name="preview_theme_use">使用</string>
+    <string name="preview_theme_using">使用中</string>
+
+    <string-array name="language_array">
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="color_theme_name">
+        <item>蓝色</item>
+        <item>绿色</item>
+        <item>粉色</item>
+        <item>黄色</item>
+    </string-array>
+
+    <string-array name="color_theme_position">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string-array name="personality_theme_name">
+        <item>冰封夏日</item>
+        <item>荷塘月色</item>
+        <item>繁星之下</item>
+        <item>懒惰时光</item>
+        <item>小黄人</item>
+        <item>新年快乐</item>
+    </string-array>
+
+    <string-array name="personality_theme_position">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+</resources>

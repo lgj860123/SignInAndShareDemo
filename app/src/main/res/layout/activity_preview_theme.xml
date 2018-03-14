@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--状态栏部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/view_theme_preview_state_bar_bg">
+
+            <com.pybeta.daymatter.signinandsharedemo.custom.StatusBarCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:showAfterSdkVersionInt="15"
+                app:showAlways="false"
+                android:background="@drawable/view_theme_preview_state_bar_custom_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageButton
+                    android:id="@+id/ib_themePreview_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_status_bar_back"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme_preview"
+                    android:textSize="@dimen/T17"
+                    android:textColor="@color/view_theme_preview_state_bar_text_color"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/view_theme_preview_state_bar_line_bg"/>
+    </LinearLayout>
+    <!--图片部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <ImageView
+            android:id="@+id/iv_themePreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"/>
+
+    </RelativeLayout>
+
+
+    <!--按钮部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--这里为什么不用button而使用textView控件，是因为使用button时，切换语言时，英文全部都是大写-->
+        <TextView
+            android:id="@+id/tv_themePreview_use"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/view_theme_preview_use_but_bg"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/preview_theme_use"
+            android:layout_centerVertical="true"
+            android:textColor="@color/view_theme_preview_use_but_text_color"
+            android:textSize="@dimen/T17"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

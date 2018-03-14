@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pybeta.daymatter.signinandsharedemo.custom.SkinRadioGroup
+        android:id="@+id/main_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@drawable/view_main_radio_group_bg"
+        android:checkedButton="@+id/home_homePageTab"
+        android:orientation="horizontal">
+
+        <com.pybeta.daymatter.signinandsharedemo.custom.SkinTabButton
+            android:id="@+id/main_tab_homePage"
+            style="@style/MainTabStyle"
+            android:saveEnabled="false"
+            android:background="@drawable/view_main_tab_but_bg"
+            android:drawableTop="@drawable/view_main_tab_icon_home_page"
+            app:text="@string/home_page"/>
+
+        <com.pybeta.daymatter.signinandsharedemo.custom.SkinTabButton
+            android:id="@+id/main_tab_otherOne"
+            style="@style/MainTabStyle"
+            android:saveEnabled="false"
+            android:background="@drawable/view_main_tab_but_bg"
+            android:drawableTop="@drawable/view_main_tab_icon_other_one"
+            app:text="@string/other_one"/>
+
+        <com.pybeta.daymatter.signinandsharedemo.custom.SkinRelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/main_tab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/view_main_tab_icon_add"/>
+
+        </com.pybeta.daymatter.signinandsharedemo.custom.SkinRelativeLayout>
+
+        <com.pybeta.daymatter.signinandsharedemo.custom.SkinTabButton
+            android:id="@+id/main_tab_otherTwo"
+            style="@style/MainTabStyle"
+            android:saveEnabled="false"
+            android:background="@drawable/view_main_tab_but_bg"
+            android:drawableTop="@drawable/view_main_tab_icon_other_two"
+            app:text="@string/other_two"/>
+
+        <com.pybeta.daymatter.signinandsharedemo.custom.SkinTabButton
+            android:id="@+id/main_tab_my"
+            style="@style/MainTabStyle"
+            android:saveEnabled="false"
+            android:background="@drawable/view_main_tab_but_bg"
+            android:drawableTop="@drawable/view_main_tab_icon_my"
+            app:text="@string/my"/>
+
+    </com.pybeta.daymatter.signinandsharedemo.custom.SkinRadioGroup>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_above="@+id/main_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@drawable/view_main_tab_line_bg"/>
+
+    <FrameLayout
+        android:id="@+id/main_tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_line" />
+
+</RelativeLayout>

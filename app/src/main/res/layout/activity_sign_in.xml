@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--状态栏部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/view_sign_in_status_bar_bg">
+
+            <com.pybeta.daymatter.signinandsharedemo.custom.StatusBarCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:showAfterSdkVersionInt="15"
+                app:showAlways="false"
+                android:background="@drawable/view_sign_in_status_bar_custom_bg"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageButton
+                    android:id="@+id/ib_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_status_bar_back"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/view_sign_in_status_bar_text_color"
+                    android:textSize="@dimen/T17"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/view_status_bar_line_bg"/>
+
+    </LinearLayout>
+
+    <!--次部分预留-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+
+    <!--登录部分的UI-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/view_sign_in_phone_or_password_bg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/tv_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textSize="@dimen/T16"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/view_sign_in_phone_text_color" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_phoneNumber"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/phone_number_hint"
+                android:textColorHighlight="@color/view_sign_in_phone_hint_text_color"
+                android:textColor="@color/view_sign_in_edit_phone_or_password_text_color"
+                android:background="@null"
+                android:inputType="phone"
+                android:textSize="@dimen/T16"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/view_sign_in_phone_or_password_bg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/rl_phone"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_passwordNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_number"
+                android:textSize="@dimen/T16"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/view_sign_in_phone_text_color"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_passwordNumber"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/password_number_hint"
+                android:textColorHighlight="@color/view_sign_in_phone_hint_text_color"
+                android:textColor="@color/view_sign_in_edit_phone_or_password_text_color"
+                android:background="@null"
+                android:textSize="@dimen/T16"/>
+
+        </RelativeLayout>
+
+        <!--这里为什么不用button而使用textView控件，是因为使用button时，切换语言时，英文全部都是大写-->
+        <TextView
+            android:id="@+id/tv_signIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/view_sign_in_but_bg"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/rl_password"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/sign_in"
+            android:textColor="@color/view_sign_in_but_text_color_select"
+            android:textSize="@dimen/T17"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_signIn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_middleLine">
+
+                <!--这里为什么不用button而使用textView控件，是因为使用button时，切换语言时，英文全部都是大写-->
+                <TextView
+                    android:id="@+id/tv_forgetPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forget_password"
+                    android:textSize="@dimen/T16"
+                    android:textColor="@color/view_forget_text_color_select"
+                    android:background="@null"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_middleLine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/view_forget_and_register_middle_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_middleLine">
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register"
+                    android:textSize="@dimen/T16"
+                    android:textColor="@color/view_register_text_color_select"
+                    android:background="@null"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_signIn_otherType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_signIn"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/tv_signIn_otherType"
+                android:background="@drawable/view_sign_in_other_type_line"/>
+
+            <TextView
+                android:id="@+id/tv_signIn_otherType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_other_type"
+                android:textSize="@dimen/T14"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/view_sign_in_other_type_text_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_signIn_otherType"
+                android:background="@drawable/view_sign_in_other_type_line"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rl_signIn_otherType"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/ib_signIn_WX"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/view_sign_in_wx_select"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/ib_signIn_QQ"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/view_sign_in_qq_select"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/ib_signIn_WB"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/view_sign_in_wb_select"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

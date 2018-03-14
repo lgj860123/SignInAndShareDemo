@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="DrawablePadding">0dp</dimen>
+    //文字与图标距离
+    <dimen name="DrawableTop">1dp</dimen>
+    图标距顶距离
+    <dimen name="DrawableBottom">2dp</dimen>
+    <dimen name="MarginTop">1.5dp</dimen>
+
+
+
+    <dimen name="T8">8dp</dimen>
+    <dimen name="T9">9dp</dimen>
+    <dimen name="T10">10dp</dimen>
+    <dimen name="T11">11dp</dimen>
+    <dimen name="T12">12dp</dimen>
+    <dimen name="T13">13dp</dimen>
+    <dimen name="T14">14dp</dimen>
+    <dimen name="T15">15dp</dimen>
+    <dimen name="T15_">15.5dp</dimen>
+    <dimen name="T16">16dp</dimen>
+    <dimen name="T17">17dp</dimen>
+    <dimen name="T18">18dp</dimen>
+    <dimen name="T19">19dp</dimen>
+    <dimen name="T20">20dp</dimen>
+    <dimen name="T24">24dp</dimen>
+    <dimen name="T25">25dp</dimen>
+    <dimen name="T26">26dp</dimen>
+    <dimen name="T27">27dp</dimen>
+    <dimen name="T29">29dp</dimen>
+    <dimen name="T30">30dp</dimen>
+    <dimen name="T35">35dp</dimen>
+    <dimen name="T45">45dp</dimen>
+    <dimen name="T50">50dp</dimen>
+    <dimen name="T100">100dp</dimen>
+
+</resources>

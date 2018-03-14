@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pybeta.daymatter.signinandsharedemo">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <!--解决启动应用空白而设置的一个界面-->
+        <activity
+            android:name=".OverActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/app_name"
+            android:theme="@style/WelcomeTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--启动页-->
+        <activity android:name=".WelcomeActivity"
+            android:configChanges="locale|layoutDirection"
+            android:screenOrientation="portrait" />
+
+        <!--主页-->
+        <activity android:name=".MainActivity"
+            android:configChanges="locale|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!--添加界面-->
+        <activity android:name=".AddActivity"
+            android:configChanges="locale|layoutDirection"
+            android:screenOrientation="portrait"/>
+
+        <!--注册界面-->
+        <activity android:name=".ui.my.activity.RegisterActivity"
+            android:configChanges="locale|layoutDirection"
+            android:screenOrientation="portrait"/>
+
+        <!--登录界面-->
+        <activity android:name=".ui.my.activity.SignInActivity"
+            android:configChanges="locale|layoutDirection"
+            android:screenOrientation="portrait"/>
+
+        <!--设置界面-->
+        <activity android:name=".ui.my.activity.SettingActivity"
+            android:configChanges="locale|layoutDirection"
+            android:screenOrientation="portrait"/>
+
+        <!--多语言界面-->
+        <activity android:name=".ui.my.activity.LanguageActivity"
+            android:configChanges="locale|layoutDirection"
+            android:screenOrientation="portrait"/>
+
+        <!--主题样式选择界面-->
+        <activity android:name=".ui.my.activity.ThemeSelectorActivity"
+            android:configChanges="locale|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <!--主题样式与浏览界面-->
+        <activity android:name=".ui.my.activity.ThemePreviewActivity"
+            android:configChanges="locale|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

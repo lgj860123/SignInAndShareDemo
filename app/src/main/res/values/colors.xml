@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="status_bar_color">#38b7ea</color>                //状态栏的颜色
+
+    <color name="view_welcome_but_bg">#99000000</color>
+    <color name="view_tab_text_color_select">#38b7ea</color>
+    <color name="view_tab_text_color_nor">#777777</color>
+    <color name="view_tab_line">#dddddd</color>
+    <color name="view_tab_radio_group_bg">#ffffff</color>
+
+    <color name="view_main_tab_but_bg_select">#00ffffff</color>   //底部导航栏按钮按下背景色
+    <color name="view_main_tab_but_bg_nor">#00ffffff</color>      //底部导航栏按钮默认背景色
+    <color name="view_main_tab_line_bg">#dddddd</color>           //底部导航栏线颜色
+    <color name="view_home_page_bg_color">#fbfbfb</color>         //整体首页页面背景
+    <color name="view_other_one_bg_color">#00ffffff</color>       //整体其他1页面背景颜色
+    <color name="view_other_two_bg_color">#0006ce90</color>       //整体其他2页面背景颜色
+    <color name="view_my_bg_color">#f3f3f3</color>                //整体我的页面背景颜色
+
+    <color name="view_sign_in_but_text_color">#333333</color>     //登录按钮字体颜色
+    <color name="view_toast_custom_bg_color">#66000000</color>    //自定义吐司的背景颜色
+    <color name="view_toast_content_text_color">#ffffff</color>   //吐司内容字体的颜色
+
+
+    <color name="view_sign_in_status_bar_bg_color">#38b7ea</color>              //登录界面状态栏的背景颜色
+    <color name="view_sign_in_status_bar_custom_bg_color">#38b7ea</color>       //登录界面自定义假现象状态栏的背景颜色
+    <color name="view_sign_in_status_bar_text_color">#ffffff</color>            //登录界面状态栏字体的颜色
+    <color name="view_status_bar_line_color">#38b7ea</color>                    //登录界面状态栏底部线的颜色
+
+    <color name="view_sign_in_phone_bg_color">#ffffff</color>                   //登录界面手机号码或密码输入框背景颜色
+    <color name="view_sign_in_phone_side_line_color">#dddddd</color>            //登录界面手机号码或密码输入框边线颜色
+    <color name="view_sign_in_phone_text_color">#7d7d7d</color>                 //登录界面手机号码或密码字体颜色
+    <color name="view_sign_in_phone_hint_text_color">#999999</color>            //登录界面手机号码或密码框隐视字体颜色
+    <color name="view_sign_in_other_type_text_color">#999999</color>            //登录界面其他登录方式字体颜色
+    <color name="view_sign_in_edit_phone_or_password_text_color">#333333</color>//登录界面手机号码或者密码编辑框中字体颜色
+    <color name="view_sign_in_but_bg_color">#38b7ea</color>                     //登录界面按钮背景颜色
+    <color name="view_sign_in_but_side_line_color">#ffffff</color>              //登录界面按钮边框线颜色
+    <color name="view_sign_in_but_text_nor_color">#dddddd</color>               //登录界面按钮默认时字体的颜色
+    <color name="view_sign_in_but_text_press_color">#7d7d7d</color>             //登录界面按钮按下时字体的颜色
+
+    <color name="view_forget_text_color_nor">#16b0f8</color>                    //登录界面忘记密码字体默认时字体的颜色
+    <color name="view_forget_text_color_press">#206885</color>                  //登录界面忘记密码字体按下时字体的颜色
+
+    <color name="view_forget_and_register_middle_line_color">#16b0f8</color>    //登录界面忘记密码和注册中间线的颜色
+
+    <color name="view_register_text_color_nor">#16b0f8</color>                  //登录界面注册字体默认时字体的颜色
+    <color name="view_register_text_color_press">#206885</color>                //登录界面注册字体按下时字体的颜色
+
+
+    <color name="view_home_page_state_bar_bg_color">#38b7ea</color>             //首页状态栏背景颜色
+    <color name="view_home_page_state_bar_custom_bg_color">#38b7ea</color>      //首页自定义假现象状态栏的背景颜色
+    <color name="view_home_page_state_bar_text_color">#ffffff</color>           //首页状态栏字体颜色
+    <color name="view_home_page_state_bar_line_color">#38b7ea</color>           //首页状态栏底部线的颜色
+
+
+    <color name="view_other_one_state_bar_bg_color">#38b7ea</color>             //其他1页面状态栏背景颜色
+    <color name="view_other_one_state_bar_custom_bg_color">#38b7ea</color>      //其他1页面自定义假现象状态栏的背景颜色
+    <color name="view_other_one_state_bar_text_color">#ffffff</color>           //其他1页面状态栏字体颜色
+    <color name="view_other_one_state_bar_line_color">#38b7ea</color>           //其他1页面状态栏底部线的颜色
+
+
+    <color name="view_other_two_state_bar_bg_color">#38b7ea</color>             //其他2页面状态栏背景颜色
+    <color name="view_other_two_state_bar_custom_bg_color">#38b7ea</color>      //其他2页面自定义假现象状态栏的背景颜色
+    <color name="view_other_two_state_bar_text_color">#ffffff</color>           //其他2页面状态栏字体颜色
+    <color name="view_other_two_state_bar_line_color">#38b7ea</color>           //其他2页面状态栏底部线的颜色
+
+    <color name="view_my_state_bar_bg_color">#38b7ea</color>                    //我的页面状态栏背景颜色
+    <color name="view_my_state_bar_custom_bg_color">#38b7ea</color>             //我的页面自定义假现象状态栏的背景颜色
+    <color name="view_my_state_bar_text_color">#ffffff</color>                  //我的页面状态栏字体颜色
+    <color name="view_my_state_bar_line_color">#38b7ea</color>                  //我的页面状态栏底部线的颜色
+
+    <color name="view_setting_state_bar_bg_color">#38b7ea</color>               //设置页面状态栏背景颜色
+    <color name="view_setting_state_bar_custom_bg_color">#38b7ea</color>        //设置页面自定义假现象状态栏的背景颜色
+    <color name="view_setting_state_bar_text_color">#ffffff</color>             //设置页面状态栏字体颜色
+    <color name="view_setting_state_bar_line_color">#38b7ea</color>             //设置页面状态栏底部线的颜色
+    <color name="view_setting_bg_color">#f3f3f3</color>                         //设置页背景颜色
+    <color name="view_setting_text_color">#7d7d7d</color>                       //设置页字体颜色
+    <color name="view_setting_item_bg_color">#ffffff</color>                    //设置页字体颜色
+    <color name="view_setting_line_color">#7d7d7d</color>                       //设置页线的颜色
+
+    <color name="view_language_state_bar_bg_color">#38b7ea</color>              //多语言页面状态栏背景颜色
+    <color name="view_language_state_bar_custom_bg_color">#38b7ea</color>       //多语言页面自定义假现象状态栏的背景颜色
+    <color name="view_language_state_bar_text_color">#ffffff</color>            //多语言页面状态栏字体颜色
+    <color name="view_language_state_bar_line_color">#38b7ea</color>            //多语言页面状态栏底部线的颜色
+    <color name="view_language_bg_color">#f3f3f3</color>                        //多语言页背景颜色
+    <color name="view_language_item_text_color">#7d7d7d</color>                 //多语言页字体颜色
+    <color name="view_language_item_bg_color">#ffffff</color>                   //多语言页字体颜色
+    <color name="view_language_item_line_color">#7d7d7d</color>                 //多语言页线的颜色
+
+    <color name="view_theme_state_bar_bg_color">#38b7ea</color>                 //个性主题页面状态栏背景颜色
+    <color name="view_theme_state_bar_custom_bg_color">#0038b7ea</color>        //个性主题页面自定义假现象状态栏的背景颜色
+    <color name="view_theme_state_bar_text_color">#ffffff</color>               //个性主题页面状态栏字体颜色
+    <color name="view_theme_state_bar_line_color">#38b7ea</color>               //个性主题页面状态栏底部线的颜色
+    <color name="view_theme_bg_color">#f3f3f3</color>                           //个性主题页背景颜色
+    <color name="view_theme_item_text_color">#7d7d7d</color>                    //个性主题页字体颜色
+    <color name="view_theme_item_bg_color">#ffffff</color>                      //个性主题页字体颜色
+    <color name="view_theme_item_line_color">#7d7d7d</color>                    //个性主题页线的颜色
+    <color name="view_theme_head_circle_image_bg_color">#38b7ea</color>         //个性主题头部圆形图片的背景颜色
+    <color name="view_theme_head_circle_line_bg_color">#2b6580</color>          //个性主题头部圆形图片中线的背景颜色
+    <color name="view_theme_head_text_color">#ffffff</color>                    //个性主题页面头部字体颜色
+    <color name="view_theme_grid_item_title_bg_color">#ffffff</color>
+    <color name="view_theme_grid_item_title_text_color">#333333</color>
+    <color name="view_theme_color_item_bg_color">#38b7ea</color>
+    <color name="view_theme_color_blue_color">#38b7ea</color>
+    <color name="view_theme_color_green_color">#06ce90</color>
+    <color name="view_theme_color_pink_color">#fd7897</color>
+    <color name="view_theme_color_yellow_color">#feb832</color>
+
+
+    <color name="view_theme_preview_state_bar_bg_color">#38b7ea</color>          //主题预览页面状态栏背景颜色
+    <color name="view_theme_preview_state_bar_custom_bg_color">#38b7ea</color>   //主题预览页面自定义假现象状态栏的背景颜色
+    <color name="view_theme_preview_state_bar_text_color">#ffffff</color>        //主题预览页面状态栏字体颜色
+    <color name="view_theme_preview_state_bar_line_color">#38b7ea</color>        //主题预览页面状态栏底部线的颜色
+    <color name="view_theme_preview_bg_color">#f3f3f3</color>                    //主题预览页背景颜色
+    <color name="view_theme_preview_item_text_color">#7d7d7d</color>             //主题预览页字体颜色
+    <color name="view_theme_preview_item_bg_color">#ffffff</color>               //主题预览页字体颜色
+    <color name="view_theme_preview_item_line_color">#7d7d7d</color>             //主题预览页线的颜色
+    <color name="view_theme_preview_use_but_bg_color">#38b7ea</color>            //主题预览页面使用按钮背景颜色
+    <color name="view_theme_preview_using_but_bg_color">#7d7d7d</color>          //主题预览页面使用中按钮背景颜色
+    <color name="view_theme_preview_use_but_text_color">#ffffff</color>          //主题预览界面中按钮中的字体颜色
+
+
+</resources>
