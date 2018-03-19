@@ -8,7 +8,7 @@ import com.pybeta.daymatter.signinandsharedemo.base.BaseActivity;
 import org.xutils.view.annotation.ContentView;
 
 /**
- * 注册界面
+ * 注册界面(注册和忘记密码用同一个界面)
  * Created by luogj on 2018/2/7.
  */
 @ContentView(R.layout.activity_register)

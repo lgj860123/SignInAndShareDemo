@@ -123,4 +123,15 @@
     <color name="view_theme_preview_use_but_text_color">#ffffff</color>          //主题预览界面中按钮中的字体颜色
 
 
+    <!--注册和忘记密码共用一个界面-->
+    <color name="view_register_state_bar_bg_color">#38b7ea</color>               //注册页面状态栏背景颜色
+    <color name="view_register_state_bar_custom_bg_color">#38b7ea</color>        //注册页面自定义假现象状态栏的背景颜色
+    <color name="view_register_state_bar_text_color">#ffffff</color>             //注册页面状态栏字体颜色
+    <color name="view_register_state_bar_line_color">#38b7ea</color>             //注册页面状态栏底部线的颜色
+    <color name="view_register_bg_color">#f3f3f3</color>                         //注册页背景颜色
+    <color name="view_register_text_color">#7d7d7d</color>                       //注册页字体颜色
+    <color name="view_register_item_bg_color">#ffffff</color>                    //注册页字体颜色
+    <color name="view_register_line_color">#7d7d7d</color>                       //注册页线的颜色
+
+
 </resources>
