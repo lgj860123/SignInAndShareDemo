@@ -132,6 +132,10 @@
     <color name="view_register_text_color">#7d7d7d</color>                       //注册页字体颜色
     <color name="view_register_item_bg_color">#ffffff</color>                    //注册页字体颜色
     <color name="view_register_line_color">#7d7d7d</color>                       //注册页线的颜色
+    <color name="view_register_hint_text_color">#999999</color>                  //注册页面中编辑框隐藏显示字体的颜色
+    <color name="view_register_get_verification_code_frame_color">#38b7ea</color>//注册页面获取验证码边框线颜色
+    <color name="view_register_get_code_text_press_color">#38b7ea</color>        //注册页面获取验证码按下时字体颜色
+    <color name="view_register_get_code_text_nor_color">#cccccc</color>          //注册页面获取验证码默认字体颜色
 
 
 </resources>

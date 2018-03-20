@@ -139,7 +139,9 @@ public class SignInActivity extends BaseActivity {
      * 进入忘记密码界面
      */
     private void goToForgetPasswordView() {
-
+        Intent intent_forgetPassword = new Intent(activity,RegisterActivity.class);
+        intent_forgetPassword.putExtra("forget_password","forget_password");
+        startActivity(intent_forgetPassword);
     }
 
     /**
@@ -147,6 +149,7 @@ public class SignInActivity extends BaseActivity {
      */
     private void goToRegisterView() {
         Intent intent_register = new Intent(activity,RegisterActivity.class);
+        intent_register.putExtra("register","register");
         startActivity(intent_register);
     }
 
