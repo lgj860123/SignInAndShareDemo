@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SignInAndShareDemo.iml" filepath="$PROJECT_DIR$/SignInAndShareDemo.iml" />
+      <module fileurl="file://D:\my_custom_as_demo\SignInAndShareDemo\SignInAndShareDemo.iml" filepath="D:\my_custom_as_demo\SignInAndShareDemo\SignInAndShareDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\my_custom_as_demo\SignInAndShareDemo\app\app.iml" filepath="D:\my_custom_as_demo\SignInAndShareDemo\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdpartyloginandshare/thirdpartyloginandshare.iml" filepath="$PROJECT_DIR$/thirdpartyloginandshare/thirdpartyloginandshare.iml" />
+      <module fileurl="file://D:\my_custom_as_demo\SignInAndShareDemo\thirdpartyloginandshare\thirdpartyloginandshare.iml" filepath="D:\my_custom_as_demo\SignInAndShareDemo\thirdpartyloginandshare\thirdpartyloginandshare.iml" />
     </modules>
   </component>
 </project>

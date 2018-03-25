@@ -22,9 +22,9 @@ public class Des {
     public static String encrypt(String key, String encryptString) throws Exception {
 
         IvParameterSpec zeroIv = new IvParameterSpec(iv.getBytes());
-        SecretKeySpec skey = new SecretKeySpec(key.getBytes(),"DES");
+        SecretKeySpec sKey = new SecretKeySpec(key.getBytes(),"DES");
         Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
-        cipher.init(Cipher.ENCRYPT_MODE, skey, zeroIv);
+        cipher.init(Cipher.ENCRYPT_MODE, sKey, zeroIv);
         byte[] encryptedData = cipher.doFinal(encryptString.getBytes());
         return Base64.encode(encryptedData);
     }
@@ -39,9 +39,9 @@ public class Des {
 
         byte[] byteMi = Base64.decode(decryptString);
         IvParameterSpec zeroIv = new IvParameterSpec(iv.getBytes());
-        SecretKeySpec skey = new SecretKeySpec(key.getBytes(), "DES");
+        SecretKeySpec sKey = new SecretKeySpec(key.getBytes(), "DES");
         Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
-        cipher.init(Cipher.DECRYPT_MODE, skey, zeroIv);
+        cipher.init(Cipher.DECRYPT_MODE, sKey, zeroIv);
         byte decryptedData[] = cipher.doFinal(byteMi);
         return new String(decryptedData);
     }

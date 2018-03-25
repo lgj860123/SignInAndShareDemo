@@ -46,10 +46,10 @@ public class Rsa {
     public static String encrypt(String content){
 
         try {
-            PublicKey pubkey = getPublicKeyFromX509(ALGORITHM, publicKey);
+            PublicKey pubKey = getPublicKeyFromX509(ALGORITHM, publicKey);
 
             Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-            cipher.init(Cipher.ENCRYPT_MODE, pubkey);
+            cipher.init(Cipher.ENCRYPT_MODE, pubKey);
 
             byte plaintext[] = content.getBytes("UTF-8");
             byte[] output = cipher.doFinal(plaintext);
@@ -70,11 +70,11 @@ public class Rsa {
     public static String decrypt(String content){
 
         try {
-            PublicKey prikey = getPublicKeyFromX509(ALGORITHM, publicKey);
+            PublicKey priKey = getPublicKeyFromX509(ALGORITHM, publicKey);
 
             byte plaintext[] = Base64.decode(content);
             Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
-            cipher.init(Cipher.DECRYPT_MODE, prikey);
+            cipher.init(Cipher.DECRYPT_MODE, priKey);
             byte[] output = cipher.doFinal(plaintext);
             return new String(output, ("UTF-8"));
 
@@ -104,9 +104,9 @@ public class Rsa {
             signature.update(content.getBytes("utf-8"));
             Log.i("Result", "content :   "+content);
             Log.i("Result", "sign:   " + sign);
-            boolean bverify = signature.verify(Base64.decode(sign));
-            Log.i("Result", "bverify = " + bverify);
-            return bverify;
+            boolean bVerify = signature.verify(Base64.decode(sign));
+            Log.i("Result", "bverify = " + bVerify);
+            return bVerify;
         } catch (Exception e) {
             e.printStackTrace();
         }
