@@ -57,7 +57,7 @@ public class HomePageFragment extends BaseFragment implements MainTabClickListen
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-//        getTestData();
+        getTestData();
         Log.i(TAG, "##### onCreateView: ");
         return super.onCreateView(inflater, container, savedInstanceState);
     }
