@@ -77,6 +77,11 @@ public class MainActivity extends BaseActivity implements ActivityCompat.OnReque
         context = this;
         EventBus.getDefault().register(this);
         initMainView();
+        initData();
+    }
+
+    private void initData() {
+        
     }
 
     @Override
